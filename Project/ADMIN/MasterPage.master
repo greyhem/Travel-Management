@@ -1,0 +1,75 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="ADMIN_MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Travels_Admin</title>
+    
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0)">
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0)">
+    <link href="../Includes/styles.css" rel="stylesheet" type="text/css" />
+    
+     <script language="javascript" type="text/javascript" src="../Includes/datetimepicker.js"></script>
+      <script type="text/javascript" language="javascript" src="../Includes/validations.js"></script>
+
+    <script type="text/javascript" language="javascript" src="../Includes/validations_click.js"></script>
+      <script language="JavaScript" type="text/javascript">
+	<!--
+		if (document.images)
+		{
+		calimg= new Image(16,16); 
+		calimg.src="Images/cal.gif"; 
+		}
+	//-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+    <script language="javascript" type="text/javascript">
+// <!CDATA[
+
+function IMG1_onclick() {
+Response.Redirect("AdminArea.aspx");
+}
+
+// ]]>
+    </script>
+
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <form id="form1" runat="server">
+        <table id="Table_01" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="3" style="background-image: url('../images/Travels_Admin_01.gif')" width="1000"
+                    height="171">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../images/Travels_Admin_02.gif" width="861" height="25" alt=""></td>
+                <td>
+                    <a href="AdminArea.aspx"  ><img src="../images/Travels_Admin_03.gif" width="138" height="25" alt="" id="IMG1"
+                        onclick="return IMG1_onclick()" border="0" ></a></td>
+                <td>
+                    <img src="../images/Travels_Admin_04.gif" width="1" height="27" alt=""></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img src="../images/Travels_Admin_05.gif" width="999" height="2" alt=""></td>
+            </tr>
+            <tr>
+                <td colspan="3" style="background-color: #cfdffa; width: 786px;" height="370">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" ForeColor="DarkRed"
+                        Style="z-index: 100; left: 936px; position: absolute; top: 128px; font-size: 10pt;" PostBackUrl="~/Login.aspx">LogOut</asp:LinkButton>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <img src="../images/Travels_Admin_07.gif" width="1000" height="26" alt=""></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

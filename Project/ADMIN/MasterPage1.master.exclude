@@ -1,0 +1,52 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage1.master.cs" Inherits="ADMIN_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Travels_Admin</title>
+    <link href="../Includes/styles.css" rel="stylesheet" type="text/css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- ImageReady Slices (Travels_Admin.psd) -->
+<form id="form1" runat="server">
+<table id="Table_01" width="1000" height="600" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr>
+		<td colspan="3" style="height: 151px" >
+			<img src="../images/Travels_Admin_01.gif" width="1000" height="171" alt=""></td>
+	</tr>
+
+	<tr>
+		<td>
+			<img src="../images/Travels_Admin_02.gif" width="861" height="25" alt=""></td>
+		<td>
+			<a href="AdminArea.aspx"> <img src="../images/Travels_Admin_03.gif" width="138" height="25" alt="" border="0"></a></td>
+		<td rowspan="2">
+			<img src="../images/Travels_Admin_04.gif" width="1" height="27" alt=""></td>
+	</tr>
+	<%--<tr>
+
+		<td colspan="3">
+			<img src="../images/Travels_Admin_05.gif" width="999" height="2" alt=""></td>
+	</tr>--%>
+	<tr>
+		   <td colspan="3" style="background-color: #cfdffa; width: 786px;" height="349">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" ForeColor="#FFFFFF"
+                        Style="z-index: 100; left: 920px; position: absolute; top: 16px" PostBackUrl="~/Login.aspx">LogOut</asp:LinkButton>
+                    &nbsp;
+                </td>
+	</tr>
+	<tr>
+		<td colspan="3">
+
+			<img src="../images/Travels_Admin_07.gif" width="1000" height="26" alt=""></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+</form>
+</body>
+</html>

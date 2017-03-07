@@ -1,0 +1,81 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0)">
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0)">
+
+    <script language="javascript" type="text/javascript" src="Includes/datetimepicker.js"></script>
+    
+    <link href="Includes/styles.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" language="javascript" src="../Includes/validations.js"></script>
+
+    <script type="text/javascript" language="javascript" src="../Includes/validations_click.js"></script>
+      <script language="JavaScript" type="text/javascript">
+	<!--
+		if (document.images)
+		{
+		calimg= new Image(16,16); 
+		calimg.src="images/cal.gif"; 
+		
+		}
+	
+      </script>
+
+  
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table id="Table_01" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="5" style="background-image: url('images/Travels_user_01.gif')" width="1000"
+                    height="170">
+                </td>
+            </tr>
+            <tr style="background-color:#cfdffa;">
+                <td>
+                    <a href="AboutUs.aspx">
+                    <img src="images/Travels_03.gif" width="144" height="28" alt="" border="0"></td>
+                <td>
+                    <a href="AvailableServices.aspx">
+                        <img src="images/Travels_05.gif" width="144" height="28" alt="" border="0"></a></td>
+                <td>
+                    <a href="CreateAccount.aspx">
+                        <img src="images/Travels_09.gif" width="144" height="28" alt="" border="0"></a></td>
+                <td>
+                    <a href="ContactUs.aspx">
+                        <img src="images/Travels_07.gif" width="144" height="28" alt="" border="0"></a></td>
+                <td>
+                    <a href="Feedback.aspx">
+                        <img src="images/Travels_11.gif" width="144" height="28" alt="" border="0"></a></td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <img src="images/Travels_user_10.gif" width="1000" height="2" alt="" border="0"></td>
+            </tr>
+            <tr>
+                <td colspan="5" style="background-color: #cfdffa; height:380px;">
+                 
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        
+                    </asp:ContentPlaceHolder>
+                   <%-- <asp:Button ID="Button1" runat="server" BackColor="#3366CC" Font-Bold="True" ForeColor="#FFFFFF"
+                            OnClick="Button1_Click" Style="z-index: 100; left: 832px; position: absolute;
+                            top: 24px" Text="Home" />--%>
+                             <asp:LinkButton ID="LinkButton2" runat="server" Font-Bold="True" ForeColor="DarkRed"
+                        Style="z-index: 100; left: 824px; position: absolute; top: 128px; font-size: 10pt;" PostBackUrl="~/Home.aspx">Home</asp:LinkButton>
+                            
+                     <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" ForeColor="DarkRed"
+                        Style="z-index: 100; left: 896px; position: absolute; top: 128px; font-size: 10pt;" PostBackUrl="~/Login.aspx">Login</asp:LinkButton>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <img src="images/Travels_user_12.gif" width="1000" height="25" alt=""></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
